@@ -2,12 +2,7 @@ import os
 import sys
 try:
     import progressbar
-except ImportError:
-    print('Failed to import progressbar.')
-    print('Run "pip install progressbar2"')
-    sys.exit(1)
-
-import urllib.request
+    import urllib.request
 
 logo = """
    ______                          _ __        ____        __
