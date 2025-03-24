@@ -162,11 +162,11 @@ while True:
                 with open('test/temp.speedx.xxx', 'a') as f:
                     f.write('THIS IS A COMMIT BY SPEEDX COMMIT BOT\n')
                 os.system('cd test && git add temp.speedx.xxx . > NUL 2>&1')
-                os.system('cd test && git commit -m "Commit By SpeedX Bot!!!" > NUL 2>&1')
+                os.system('cd test && git commit -m "I am a $wagger!" > NUL 2>&1')
             else:
                 os.system('echo "THIS IS A COMMIT BY SPEEDX COMMIT BOT" >> test/temp.speedx.xxx')
                 os.system('cd test && git add temp.speedx.xxx . > /dev/null')
-                os.system('cd test && git commit -m \'Commit By SpeedX Bot!!!\' > /dev/null')
+                os.system('cd test && git commit -m \'I am a $wagger!\' > /dev/null')
         
         print('\n[+] Cleaning Repository...')
         if system == 'Windows':
@@ -179,7 +179,7 @@ while True:
         print('[-] Final Commit')
         
         os.system('cd test && git add .')
-        os.system('cd test && git commit -m "Commit By SpeedX Bot!!!"')
+        os.system('cd test && git commit -m "I am a $wagger!"')
         print('[+] Pushing Repo To Remote URL: ' + gu)
         os.system('cd test && git push -u --force origin master')
         
